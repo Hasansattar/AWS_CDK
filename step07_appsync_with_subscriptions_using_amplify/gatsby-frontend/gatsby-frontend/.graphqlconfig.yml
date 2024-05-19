@@ -1,0 +1,19 @@
+projects:
+  cdk-todos-appsync-api:
+    schemaPath: src/graphql/schema.json
+    includes:
+      - src/graphql/**/*.ts
+    excludes:
+      - ./amplify/**
+      - src/API.ts
+    extensions:
+      amplify:
+        codeGenTarget: typescript
+        generatedFileName: src/API.ts
+        docsFilePath: src/graphql
+        region: us-east-1
+        apiId: le5ck6courfqffdh7he6yg6lei
+        maxDepth: 2
+extensions:
+  amplify:
+    version: 3

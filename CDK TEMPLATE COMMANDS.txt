@@ -1,0 +1,7 @@
+1) cdk init app --language typescript
+2) npm run build
+3) cdk synth
+4) cdk deploy
+
+
+// amplify add codegen --apiId ENTER_YOUR_API_ID
