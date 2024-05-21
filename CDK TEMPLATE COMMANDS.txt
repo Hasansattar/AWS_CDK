@@ -2,6 +2,6 @@
 2) npm run build
 3) cdk synth
 4) cdk deploy
-
+5) npm run build && cdk deploy
 
 // amplify add codegen --apiId ENTER_YOUR_API_ID
