@@ -100,10 +100,10 @@ export class CdkBackendStack extends cdk.Stack {
         new CodePipelineAction.GitHubSourceAction({
           actionName: 'Checkout',
           owner: 'Hasansattar',
-          repo: "github-repo-name",
-          oauthToken: cdk.SecretValue.secretsManager('GITHUB_TOKEN'), ///create token on github and save it on aws secret manager
+          repo: "demo-gatsby-pipeline",
+          oauthToken: cdk.SecretValue.unsafePlainText('GITHUB-TOKEN'), ///create token on github and save it on aws secret manager
           output: sourceOutput,                                       ///Output will save in the sourceOutput Artifact
-          branch: "master",                                           ///Branch of your repo
+          branch: "main",                                           ///Branch of your repo
         }),
       ],
     })

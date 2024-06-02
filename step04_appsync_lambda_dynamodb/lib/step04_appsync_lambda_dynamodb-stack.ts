@@ -12,7 +12,7 @@ export class Step04AppsyncLambdaDynamodbStack extends cdk.Stack {
     //APPSYNC API gives you a graphql api with api key
     const api = new appsync.GraphqlApi(this, 'Api', {
       name: 'cdk-todos-appsync-api',
-      schema: appsync.SchemaFile.fromAsset('graphql/schema.graphql'),  ///Path specified for lambda
+      schema: appsync.SchemaFile.fromAsset('graphql/schema.gql'),  ///Path specified for lambda
       authorizationConfig: {
         defaultAuthorization: {
           authorizationType: appsync.AuthorizationType.API_KEY,  ///Defining Authorization Type
