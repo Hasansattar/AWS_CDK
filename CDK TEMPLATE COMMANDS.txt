@@ -5,3 +5,13 @@
 5) npm run build && cdk deploy
 
 // amplify add codegen --apiId ENTER_YOUR_API_ID
+
+check scope of lambda function
+console.log(lambda-fn.node.scope)
+check scope of Stack
+console.log(this.node.scope)
+
+
+check L1 contruct is children of L2 contructs
+console.log(lambda-fn.node.scope)
+console.log(this.node.childern)
