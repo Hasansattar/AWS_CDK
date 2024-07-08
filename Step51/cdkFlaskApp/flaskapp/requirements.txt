@@ -1,0 +1,6 @@
+Flask==2.0.1
+tensorflow==2.12.0  # Updated to a version available in the repositories
+numpy>=1.19.5       # Ensure compatibility with the TensorFlow version
+scikit-learn>=0.24.2  # If you used any functionalities from scikit-learn
+pickle-mixin==1.0.2
+gunicorn==20.1.0  # If deploying using Gunicorn, especially useful in production
