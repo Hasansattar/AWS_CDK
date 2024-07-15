@@ -15,3 +15,6 @@ console.log(this.node.scope)
 check L1 contruct is children of L2 contructs
 console.log(lambda-fn.node.scope)
 console.log(this.node.childern)
+
+ // Ensure the association happens after the domain name creation
+    domainAssociation.node.addDependency(domainNameConfig);
