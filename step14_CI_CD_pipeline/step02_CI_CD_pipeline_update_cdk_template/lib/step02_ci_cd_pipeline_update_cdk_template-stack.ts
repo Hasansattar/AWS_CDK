@@ -4,6 +4,7 @@ import * as CodePipeline from 'aws-cdk-lib/aws-codepipeline';
 import * as CodePipelineAction from 'aws-cdk-lib/aws-codepipeline-actions';
 import * as CodeBuild from 'aws-cdk-lib/aws-codebuild';
 
+
 export class Step02CiCdPipelineUpdateCdkTemplateStack extends cdk.Stack {
   constructor(scope: Construct, id: string, props?: cdk.StackProps) {
     super(scope, id, props);
@@ -58,8 +59,9 @@ export class Step02CiCdPipelineUpdateCdkTemplateStack extends cdk.Stack {
         new CodePipelineAction.GitHubSourceAction({
           actionName: 'Checkout',
           owner: 'Hasansattar',
-          repo: "demo-cdk-pipeline",
-          oauthToken: cdk.SecretValue.unsafePlainText('GITHUB_TOKEN_AWS_SOURCE'),
+          repo: "Step04AppsyncLambdaDynamodbStack",
+          // oauthToken: cdk.SecretValue.unsafePlainText('GITHUB_TOKEN_AWS_SOURCE'),
+          oauthToken: cdk.SecretValue.unsafePlainText("sddsdww_wewewD6zwbdfdfXAGIOdqZhdfdJ3hsdsdsdsds"),
           output: sourceOutput,
           branch: "main",
         }),

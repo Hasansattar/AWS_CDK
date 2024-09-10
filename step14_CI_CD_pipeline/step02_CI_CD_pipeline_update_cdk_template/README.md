@@ -1,5 +1,8 @@
 # AWS CDK CI/CD Pipeline
 
+
+This cdk code deploy another cdk code through code pipelines CICD
+
 ## Overviews
 
 ## step 1
