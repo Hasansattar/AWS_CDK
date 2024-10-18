@@ -5,8 +5,8 @@ const awsmobile = {
    
   
     aws_project_region: "us-east-1",
-    aws_user_pools_id: "us-east-1_suajHqNQH",
-    aws_user_pools_web_client_id: "49ktluog35aptqk271tij4672"
+    aws_user_pools_id: "us-east-1_8jOlvEoM7",
+    aws_user_pools_web_client_id: "3i2vnl090v5lbh9217l1br0nfu"
   
 };
 
